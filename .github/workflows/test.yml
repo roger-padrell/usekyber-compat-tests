@@ -21,7 +21,7 @@ jobs:
       - uses: jiro4989/setup-nim-action@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-      - run: nimble add nim_kyber
+      - run: nimble install nim_kyber
 
       # Generate preset
       - name: Generate preset
