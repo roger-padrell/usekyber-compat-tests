@@ -13,7 +13,19 @@ jobs:
       id-token: write
 
     steps:
+      # Deno setup
       - uses: denoland/setup-deno@v2.0.2
 
-      - name: Nim - TS
-        run: deno test
+      # Nim setup
+      - uses: actions/checkout@v3
+      - uses: jiro4989/setup-nim-action@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Generate preset
+      - name: Generate preset
+        run: nim c -r ./src/usekyber_compat_tests.nim
+
+      # Tests
+      - name: TypeScript test from NIM preset
+        run: deno test --allow-read
