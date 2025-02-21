@@ -15,6 +15,7 @@ jobs:
     steps:
       # Deno setup
       - uses: denoland/setup-deno@v2.0.2
+      - run: nimble add nim_kyber
 
       # Nim setup
       - uses: actions/checkout@v3
