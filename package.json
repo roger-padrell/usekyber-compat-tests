@@ -1,0 +1,27 @@
+{
+  "name": "usekyber-compat-tests",
+  "version": "1.0.0",
+  "description": "Compatibility tests for UseKyber",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roger-padrell/usekyber-compat-tests.git"
+  },
+  "type":"module",
+  "keywords": [
+    "UseKyber",
+    "Compat-Tests"
+  ],
+  "author": "UseKyber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roger-padrell/usekyber-compat-tests/issues"
+  },
+  "homepage": "https://github.com/roger-padrell/usekyber-compat-tests#readme",
+  "dependencies": {
+    "js-kyber": "^1.1.0"
+  }
+}

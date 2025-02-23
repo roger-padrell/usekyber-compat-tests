@@ -15,6 +15,10 @@ jobs:
     steps:
       # Deno setup
       - uses: denoland/setup-deno@v2.0.2
+
+      # Node + npm setup
+      - uses: actions/setup-node@v4.2.0
+      - run: npm install
     
       # Nim setup
       - uses: actions/checkout@v3
@@ -30,3 +34,6 @@ jobs:
       # Tests
       - name: TypeScript test from NIM preset
         run: deno test --allow-read
+
+      - name: JavaScript test from NIM preset
+        run: npm test
