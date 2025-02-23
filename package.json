@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/roger-padrell/usekyber-compat-tests.git"
   },
-  "type":"module",
+  "type": "module",
   "keywords": [
     "UseKyber",
     "Compat-Tests"
