@@ -1,5 +1,5 @@
-import * as kyb from "js-kyber"
-import fs from 'node:fs';
+var kyb = require("js-kyber")
+var fs = require('node:fs')
 
 let preset_kyb = fs.readFileSync("preset_kyber.txt");
 let preset_message = fs.readFileSync("preset_message.txt");

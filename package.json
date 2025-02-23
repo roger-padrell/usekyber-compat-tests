@@ -2,15 +2,15 @@
   "name": "usekyber-compat-tests",
   "version": "1.0.0",
   "description": "Compatibility tests for UseKyber",
-  "main": "index.mjs",
+  "main": "index.cjs",
   "scripts": {
-    "test": "node index.mjs"
+    "test": "node index.cjs"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roger-padrell/usekyber-compat-tests.git"
   },
-  "type": "module",
+  "type": "commonjs",
   "keywords": [
     "UseKyber",
     "Compat-Tests"
