@@ -2,9 +2,9 @@
   "name": "usekyber-compat-tests",
   "version": "1.0.0",
   "description": "Compatibility tests for UseKyber",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.mjs"
   },
   "repository": {
     "type": "git",
